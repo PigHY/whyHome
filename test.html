@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+	.contain{
+		position: relative;
+		margin: 0 auto;
+		width: 200px;
+	}
+	.div1{
+		width: 200px;
+		height: 200px;
+		background:url(../photo/ftr-stripe.png);
+		border-radius: 50% 50%;
+	}
+	.div2{
+		width: 150px;
+		height: 150px;
+		background-color: white;
+		border-radius: 50% 50%;
+		position: absolute;
+		left: 25px;
+		top: 25px;
+	}
+	span{
+		position: absolute;
+		top: 90px;
+		left: 80px;
+	}
+	#pacman {  width: 0px;   height: 0px;   border-right: 60px solid yellow;   border-top: 60px solid transparent;  
+        border-left: 60px solid transparent;   
+        border-bottom: 60px solid transparent;  
+        border-top-left-radius: 60px;   
+        border-top-right-radius: 60px; 
+        border-bottom-left-radius: 60px;   
+        border-bottom-right-radius: 60px; 
+        border-right-radius:60px;
+        transform:rotate(12deg);
+        -webkit-transform:rotate(22deg);
+     }
+     .works{
+	position: relative;
+	margin-bottom: 120px;
+}
+.works h3{
+	font-size: 2.2em;
+	line-height: 1.5em;
+	/*display: block;*/
+	position: absolute;
+	left: 30px;
+	top: 25px;
+	color: #4c3d6d;
+	z-index: 99;
+}
+.works:before{
+	content: "";
+	border:2px solid #4c3d6d;
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.works:after{
+	content: "";
+	border:30px solid transparent;
+	border-right-color:#4c3d6d;
+	border-radius: 30px; 
+	position: absolute;
+	left: -30px;
+	top: -30px;
+	-webkit-transform:rotate(45deg);
+	z-index: -1;
+}
+.works-left:before{
+	content: "";
+	border:30px solid transparent;
+	border-right-color:#fff;
+	border-radius: 30px; 
+	/*border-bottom-right-radius: 60px;*/
+	position: absolute;
+	left: -32px;
+	top: -30px;
+	-webkit-transform:rotate(45deg);
+/*	z-index: 2;*/
+}
+.works-left:after{
+	content: "";
+	border:2px solid #4c3d6d;
+	width: 98%;
+	height: 130px;
+	position: absolute;
+	left: 8px;
+	top: 10px;
+	/*z-index: 5;*/
+}
+.works-right:before{
+	content: "";
+	width: 8%;
+	height: 130px;
+	position: absolute;
+	left: 10px;
+	top: 12px;
+	background:url(../photo/ftr-stripe.png);
+	border-right: 2px solid #4c3d6d;
+	/*z-index: 30;*/
+}
+.works-list{
+	width: 100%;
+	position: absolute;
+	left: 8%;
+	top: 12px;
+}
+.works-list li{
+	width: 15%;
+	height: 130px;
+	float: left;
+	border-right: 2px solid #4c3d6d;
+}
+.works-list li{
+	text-align: center;
+	line-height: 8em;
+	z-index: 999;
+}
+.works-list li:nth-child(odd){
+	background-color: #edd;
+}
+.works-list li:nth-child(even){
+	background-color: #aad;
+}
+	</style>
+</head>
+<body>
+    <div class="contain">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <span>WORKS</span>
+    </div>
+    <div class="test">
+    	<div id="pacman">sss</div>
+    </div>
+    <ul>
+    	<li>
+    		<a href="#">IT-Life</a>
+    	</li>
+    </ul>
+    <div class="works common">
+		<h3><a href="test.html" name="works">作<br />品</a></h3>
+		    <div class="works-left">
+		    	<ul class="works-list">
+		    		<li>
+		    			<a href="http://www.oooceo.com/industry/web-was-not-dead/">IT-life</a>
+		    		</li>
+		    	</ul>
+		    </div> 
+		    <div class="works-right"></div>
+		</div>
+</body>
+</html>
